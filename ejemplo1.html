@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox y Grid</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+
+    .caja {
+      background: #4CAF50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 300px;
+      background: red;
+      padding: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 40px;
+      background:yellow;
+      padding: 40px;
+    }
+
+    .boton {
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px;
+    }
+
+    .boton:hover {
+      background-color: #f0f0f0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Flexbox y Grid</h1>
+  </header>
+
+  <nav>
+    <ul>
+    <a href="index.html" class="boton">Inicio</a>
+    </ul>
+  </nav>
+
+  <h2>Flexbox</h2>
+  <div class="flex-container">
+    <div class="caja">Caja 1</div>
+    <div class="caja">Caja 2</div>
+    <div class="caja">Caja 3</div>
+  </div>
+
+  <h2>Grid</h2>
+  <div class="grid-container">
+    <div class="caja">Columna 1 (1fr)</div>
+    <div class="caja">Columna 2 (2fr)</div>
+  </div>
+
+  <footer>
+
+  </footer>
+
+</body>
+</html>
