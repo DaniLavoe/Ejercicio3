@@ -1,4 +1,6 @@
-<html lang="es"><head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Box Model</title>
@@ -10,60 +12,74 @@
 
     body {
       font-family: Arial, sans-serif;
-      background-color: #red;
+      background-color: red; 
       padding: 30px;
+      text-align: center;
     }
 
     .contenedor {
       width: 500px;
       padding: 50px;
       border: 20px solid blue;
-      margin: 40px;
+      margin: 40px auto;
       background-color: yellow;
     }
 
     h1 {
       font-size: 70px;
-      font color:red;
+      color: red; 
     }
 
     p {
       font-size: 20px;
     }
-        .boton {
-            background-color: white;
-            color: black;
-            border: 2px solid black;
-            padding: 10px 15px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-            margin: 5px;
-        }
 
-        .boton:hover {
-            background-color: #f0f0f0;
-        }
+    .boton {
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px;
+    }
+
+    .boton:hover {
+      background-color: #f0f0f0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 10px;
+    }
   </style>
 </head>
 <body>
-  <header></header>
+
+  <header>
+    <h1>Modelo de Caja (Box Model)</h1>
+  </header>
+
   <nav>
-       <ul>
-        <li><a href="index.html" class="boton">INICIO</a></li>
-        <li><a href="ejemplo1.html" class="boton">EJEMPLOS#1</a></li>
-        <li><a href="ejemplo3.html" class="boton">EJEMPLOS#3</a></li>
+    <ul>
+      <li><a href="index.html" class="boton">INICIO</a></li>
+      <li><a href="ejemplo1.html" class="boton">EJEMPLOS#1</a></li>
+      <li><a href="ejemplo3.html" class="boton">EJEMPLOS#3</a></li>
     </ul>
   </nav>
 
-  <h1>Modelo de Caja (Box Model)</h1>
-
   <div class="contenedor">
-    <p>Este es el ejemplo que enseña como funciona el modelo de caja en CSS.</p>
+    <p>Este es el ejemplo que enseña cómo funciona el modelo de caja en CSS.</p>
   </div>
 
+</body>
+</html>
 
-
-</body></html>
