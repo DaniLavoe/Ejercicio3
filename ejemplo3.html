@@ -5,44 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Posicionamiento y Visualización</title>
   <style>
-   body {
-  background-color: #222;
-  color: white;
-}
+      * { box-sizing: border-box; }
 
-h2 {
-  color: #f0f0f0;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e; 
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
 
-.block { background: #444; color: white; }
-.inline { background: #ffa500; color: black; }
-.inline-block { background: #555; color: white; }
+    h2 {
+      margin-top: 30px;
+      color: #f0f0f0;
+    }
 
-.pos-static {
-  background: #e74c3c; 
-  color: white;
-}
+    .display-ejemplo div, .display-ejemplo span {
+      margin: 5px;
+      padding: 5px;
+      color: white;
+    }
 
-.pos-relative {
-  background: #3498db; 
-  color: white;
-}
+    .block { display: block; background: #333; }
+    .inline { display: inline; background: #ffa500; color: black; }
+    .inline-block { display: inline-block; background: #555; width: 100px; height: 30px; }
 
-.contenedor {
-  background: #ddd;
-}
+    .pos-static {
+      position: static;
+      background: #e74c3c;
+      width: 100px; height: 50px;
+      margin-top: 20px;
+      color: white; text-align: center; line-height: 50px;
+    }
 
-.pos-absolute {
-  background: #2ecc71; 
-  color: black;
-}
+    .pos-relative {
+      position: relative;
+      top: 10px; left: 10px;
+      background: #3498db; 
+      width: 100px; height: 50px;
+      color: white; text-align: center; line-height: 50px;
+    }
 
-.z1 {
-  background-color: #f1c40f; 
+    .contenedor {
+      position: relative;
+      height: 100px;
+      background: #ddd;
+      margin-top: 10px;
+    }
 
-.z2 {
-  background-color: #e74c3c; 
-}
+    .pos-absolute {
+      position: absolute;
+      top: 10px; right: 10px;
+      background: #2ecc71; 
+      width: 100px; height: 50px;
+      color: black; text-align: center; line-height: 50px;
+    }
+
+    .z1, .z2 {
+      position: absolute;
+      width: 80px; height: 80px;
+      text-align: center; line-height: 80px;
+      color: white;
+    }
+
+    .z1 {
+      background-color: #f1c40f;
+      top: 0; left: 0;
+      z-index: 1;
+    }
+
+    .z2 {
+      background-color: #e74c3c; 
+      top: 20px; left: 20px;
+      z-index: 2;
+    }
+
+    .z-demo {
+      position: relative;
+      height: 100px;
+      margin-top: 30px;
+    }
+
+    .boton {
+      background-color: #f0f0f0;
+      color: black;
+      border: 2px solid black;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .boton:hover {
+      background-color: #ddd;
+    }
+
 
   </style>
 </head>
