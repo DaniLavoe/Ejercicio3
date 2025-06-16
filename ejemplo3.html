@@ -5,102 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Posicionamiento y Visualización</title>
   <style>
-    * { box-sizing: border-box; }
+   body {
+  background-color: #222;
+  color: white;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: red;
-      padding: 20px;
-      text-align: center;
-    }
+h2 {
+  color: #f0f0f0;
+}
 
-    h2 {
-      margin-top: 30px;
-      color: #333;
-    }
+.block { background: #444; color: white; }
+.inline { background: #ffa500; color: black; }
+.inline-block { background: #555; color: white; }
 
-    .display-ejemplo div, .display-ejemplo span {
-      margin: 5px;
-      padding: 5px;
-      color: white;
-    }
+.pos-static {
+  background: #e74c3c; 
+  color: white;
+}
 
-    .block { display: block; background: white; }
-    .inline { display: inline; background: yellow; }
-    .inline-block { display: inline-block; background: black; width: 100px; height: 30px; }
+.pos-relative {
+  background: #3498db; 
+  color: white;
+}
 
-    .pos-static {
-      position: static;
-      background: yellow;
-      width: 100px; height: 50px;
-      margin-top: 20px;
-      color: white; text-align: center; line-height: 50px;
-    }
+.contenedor {
+  background: #ddd;
+}
 
-    .pos-relative {
-      position: relative;
-      top: 10px; left: 10px;
-      background: white;
-      width: 100px; height: 50px;
-      color: white; text-align: center; line-height: 50px;
-    }
+.pos-absolute {
+  background: #2ecc71; 
+  color: black;
+}
 
-    .contenedor {
-      position: relative;
-      height: 100px;
-      background: #eee;
-      margin-top: 10px;
-    }
+.z1 {
+  background-color: #f1c40f; 
 
-    .pos-absolute {
-      position: absolute;
-      top: 10px; right: 10px;
-      background: black;
-      width: 100px; height: 50px;
-      color: gray; text-align: center; line-height: 50px;
-    }
+.z2 {
+  background-color: #e74c3c; 
+}
 
-    .z1, .z2 {
-      position: absolute;
-      width: 80px; height: 80px;
-      text-align: center; line-height: 80px;
-      color: white;
-    }
-
-    .z1 {
-      background color: yellow;
-      top: 0; left: 0;
-      z-index: 1;
-    }
-
-    .z2 {
-      background color: red;
-      top: 20px; left: 20px;
-      z-index: 2;
-    }
-
-    .z-demo {
-      position: relative;
-      height: 100px;
-      margin-top: 30px;
-    }
-
-    .boton {
-      background-color: white;
-      color: black;
-      border: 2px solid black;
-      padding: 10px 15px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-      margin: 10px;
-    }
-
-    .boton:hover {
-      background-color: #f0f0f0;
-    }
   </style>
 </head>
 <body>
